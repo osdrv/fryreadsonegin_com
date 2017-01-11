@@ -1,0 +1,371 @@
+@import '/css/reset.css';
+
+@font-face {font-family:'bold'; src:url('/fnt/DO-bold.eot'); src:url('/fnt/DO-bold.eot') format('embedded-opentype'),url('/fnt/DO-bold.woff') format('woff'),url('/fnt/DO-bold.ttf') format('truetype');font-weight:normal;font-style:normal;}
+@font-face {font-family:'WR'; src:url('/fnt/WilliamRegular2.eot'); src:url('/fnt/WilliamRegular2.eot') format('embedded-opentype'),url('/fnt/WilliamRegular2.svg') format('svg'),url('/fnt/WilliamRegular2.ttf') format('truetype');font-weight:normal;font-style:normal;}
+@font-face {font-family:'AQ'; src:url('/fnt/AntiQuasi_Regular.eot'); src:url('/fnt/AntiQuasi_Regular.eot') format('embedded-opentype'),url('/fnt/AntiQuasi_Regular.svg') format('svg'),url('/fnt/AntiQuasi_Regular.ttf') format('truetype');font-weight:normal;font-style:normal;}
+
+html,body {height:100%;}
+
+body {
+	background:#f0f0ee url(/img/bg.jpg);
+	font:24px/1.1 'bold',sans-serif;
+	color:#1C1D1A;
+	}
+
+nav {
+	position:fixed;
+	top:50%;
+	right:26px;
+	margin-top:-109px;
+	width:10px;
+	height:218px;
+	z-index:100;
+	}
+nav a {
+	display:block;
+	width:10px;
+	height:10px;
+	margin-top:8px;
+	background:url(/img/nav.png) 0 -40px no-repeat;
+	text-indent:-9999px;
+	}
+nav .sep {
+	display:block;
+	width:10px;
+	height:12px;
+	margin-top:10px;
+	background:url(/img/nav.png) 0 -20px no-repeat;
+	}
+nav .act {
+	cursor:default;
+	}
+nav i {
+	display:block;
+	height:100%;
+	}
+nav .act i {
+	background:url(/img/nav.png) 0 0 !important;
+	}
+
+.scr-1 {
+	position:relative;
+	height:100%;
+	}
+.banner {
+	position:absolute;
+	top:50%;
+	width:100%;
+	margin-top:-128px;
+	height:258px;
+	}
+.banner .shield {
+	position:relative;
+	width:207px;
+	height:258px;
+	margin:0 auto 35px;
+	background:url(/img/shield.png) no-repeat;
+	}
+.banner .shield span {
+	display:none;
+	}
+.banner .shield a {
+	position:absolute;
+	display:block;
+	text-indent:-9999px;
+	}
+.banner .shield .oup {
+	top:224px;
+	left:30px;
+	width:150px;
+	height:55px;
+	}
+.banner .shield .do {
+	top:0;
+	left:0;
+	width:207px;
+	height:207px;
+	}
+.banner .arr {
+	display:block;
+	width:100px;
+	height:72px;
+	margin:auto;
+	background:url(/img/arr.png) 50% 0 no-repeat;
+	cursor: pointer;
+	}
+
+.scr-2 {
+	position:relative;
+	height:100%;
+	overflow:hidden;
+	}
+
+header {
+	position:absolute;
+	top:3%;
+	left:50%;
+	width:422px;
+	padding:39px 0 0 0;
+	margin-left:-221px;
+	background:url(/img/fry.png) 100% 0 no-repeat;
+	text-align:center;
+	z-index:50;
+	}
+header h1 {
+	font:12px/1.2 'bold',sans-serif;
+	letter-spacing:4px;
+	color:#c7a553;
+	text-transform:uppercase;
+	}
+header h1 strong {
+	display:block;
+	font-size:44px;
+	letter-spacing:7px;
+	font-weight:normal;
+	}
+
+
+div.frontispiece {
+	position:absolute;
+	top:15%;
+	width:100%;
+	height:80%;
+	background:url(/img/frontispiece.png) 48% 50% no-repeat;
+	background-size:auto 100%;
+	}
+.texts h2 {
+	position:absolute;
+	width:100%;
+	bottom:14%;
+	font:92px/.9 'WR',serif;
+	text-align:center;
+	z-index:50;
+	}
+.texts h3 {
+	position:absolute;
+	width:100%;
+	bottom:7%;
+	padding:44px 0 0;
+	background: url(/img/hr.png) 50% 0 no-repeat;
+	font:22px/1 'WR',serif;
+	letter-spacing:5px;
+	text-align:center;
+	z-index:50;
+	}
+
+@media (min-height:800px) {
+	.texts header {
+		width:510px;
+		margin-left:-255px;
+		}
+	header h1 {
+		font-size:15px;
+		}
+	header h1 strong {
+		font-size:54px;
+		}
+	.texts h2 {
+		font-size:120px;
+		}
+	.texts h3 {
+		font-size:28px;
+		}
+}
+
+@media (min-height:1100px) {
+	.texts header {
+		width:610px;
+		margin-left:-305px;
+		}
+	header h1 {
+		font-size:19px;
+		}
+	header h1 strong {
+		font-size:70px;
+		}
+	.texts h2 {
+		font-size:146px;
+		}
+	.texts h3 {
+		font-size:35px;
+		}
+}
+
+.cover, .disc {
+	position:absolute;
+	top:20%;
+	left:50%;
+	}
+.cover {
+	width:402px;
+	height:390px;
+	padding:14px 0 0 13px;
+	margin-left:-199px;
+	background:url(/img/cover-shadow.png) no-repeat;
+	z-index:1;
+	}
+.cover .paper {
+	display:block;
+	position:relative;
+	}
+.disc {
+	width:88px;
+	height:357px;
+	margin-top:10px;
+	margin-left:80px;
+	background:url(/img/disc.png) no-repeat;
+	z-index:1;
+	}
+
+.download {
+	position:absolute;
+	top:31%;
+	left:50%;
+	margin-left:125px;
+	width:300px;
+	color:#4d8ab7;
+	text-align:center;
+	z-index: 100;
+	display: none;
+	}
+.download a {
+	text-decoration:none;
+	color:#4d8ab7;
+	}
+.download dt {
+	margin-bottom:25px;
+	}
+.download dd {
+	display:inline-block;
+	width:69px;
+	margin:0 21px;
+	}
+.download DD a {
+	display:block;
+	padding:80px 0 0;
+	}
+.download .mp3 {
+	background:url(/img/mp3.png) 50% 0 no-repeat;
+	}
+.download .itunes {
+	background:url(/img/itunes.png) 50% 0 no-repeat;
+	}
+
+.scr-3 {
+	position:relative;
+	overflow:hidden;
+	}
+.fan {
+	position:absolute;
+	top:50px;
+	left:65%;
+	width:637px;
+	height:450px;
+	background:url(/img/fan.jpg) no-repeat;
+	z-index:10;
+	}
+.about {
+	position:relative;
+	margin:auto;
+	padding:158px 5% 220px;
+	}
+@media (min-width:1300px) {
+	.about {
+		padding:158px 15% 220px;
+		}
+}
+.about h2 {
+	padding:0 0 20px;
+	font:70px/1 'WR',serif;
+	position:relative;
+	z-index:20;
+	}
+.about h3 {
+	width:640px;
+	padding:0 0 15px;
+	font:34px/1.1 'bold',sans-serif;
+	letter-spacing:2px;
+	text-transform:uppercase;
+	color:#C7A553;
+	position:relative;
+	z-index:20;
+	}
+.about h4 {
+	font-size:12px;
+	}
+.about section {
+	width:430px;
+	padding:92px 0 0;
+	margin:auto;
+	font:15px/1.6 'AQ',serif;
+	text-align:justify;
+	position:relative;
+	z-index:10;
+	}
+.about p {
+	padding:0 0 15px;
+	}
+.about a {
+	color:#4d8ab7;
+	border-bottom:1px solid #4d8ab7;
+	text-decoration:none;
+	}
+.about a:hover {
+	border:none;
+	}
+
+
+.accelerated {-webkit-transform: translateZ(0);-moz-transform: translateZ(0);transform: translateZ(0);}
+.notransition {-webkit-transition: none !important;-moz-transition: none !important;-o-transition: none !important;-ms-transition: none !important;transition: none !important;}  
+
+#pageContainer {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	z-index: 9;
+	min-width: 960px;
+}
+
+#page {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+.texts {
+	overflow: hidden;
+}
+
+.free {
+	z-index: 50;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.fixed {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 50;
+}
+
+.fixed h2, .free h2, .banner p, .cover {
+	cursor: pointer;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.footer {
+	margin: 80px 0 0;
+	font-size: 0.5em;
+	text-align: center;
+	font-family: 'AQ', serif;
+	line-height: 1.5em;
+}
